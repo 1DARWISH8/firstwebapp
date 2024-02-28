@@ -1,0 +1,52 @@
+POST http://localhost:5000/user-api/addproduct
+Content-Type: application/json
+
+{
+    "sellerusername":"christy",
+    "productid":1,
+    "productname":"DOG TOY",
+    "productimage":"hwheh",
+    "productdescription":"hdhdcds",
+    "productprice":730
+}
+
+###
+
+GET http://localhost:5000/user-api/products
+
+###
+get http://localhost:5000/user-api/users
+
+###
+PUT http://localhost:5000/user-api/editproduct
+Content-Type: application/json
+
+{
+    "sellerusername":"christy",
+    "productid":1,
+    "productname":"Squeaky Ball Toy",
+    "productimage": "https://m.media-amazon.com/images/I/5144GWsfG4L._SX355_.jpg",
+    "productdescription":"Foodie Puppies Squeaky Ball Toy - (Claw Ball)",
+    "productprice":160
+}
+
+###
+DELETE http://localhost:5000/user-api/deleteproduct/2
+
+###
+POST http://localhost:5000/user-api/addtocart
+Content-Type: application/json
+
+{
+"sellerusername":"christy",
+"username":"wendy",
+"productname":"OnePlus 12R",
+"productid":1,
+"productimage":"https://m.media-amazon.com/images/I/717JX3femML._SX569_.jpg",
+"productdescription":"OnePlus 12R (Cool Blue, 8GB RAM, 128GB Storage)",
+"productprice":39999
+}
+
+# cart data
+###
+GET http://localhost:5000/user-api/cart/wendy
